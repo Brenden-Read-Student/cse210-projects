@@ -3,6 +3,8 @@ using System.Globalization;
 
 // ask about problem on prep 4
 //and about Squaring numbers in C#.
+// also try to ask about common github problems when starting VS code.
+//try this
 class Program
 {
     static void Main(string[] args)
