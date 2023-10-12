@@ -30,6 +30,7 @@ class Program
             {
                 large = number;
             }
+            // how  do I get rid of this
             else 
             {
                 count =+ 1;
