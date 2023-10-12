@@ -16,15 +16,15 @@ class Program
         Console.WriteLine(f1.Getfractionvalue());
 
         Fraction f2 = new Fraction(a);
-        Console.WriteLine(f1.Getfractionstring());
-        Console.WriteLine(f1.Getfractionvalue());
+        Console.WriteLine(f2.Getfractionstring());
+        Console.WriteLine(f2.Getfractionvalue());
 
         Fraction f3 = new Fraction(a,b);
-        Console.WriteLine(f1.Getfractionstring());
-        Console.WriteLine(f1.Getfractionvalue());
+        Console.WriteLine(f3.Getfractionstring());
+        Console.WriteLine(f3.Getfractionvalue());
 
-        Fraction f4 = new Fraction(1/3);
-        Console.WriteLine(f1.Getfractionstring());
-        Console.WriteLine(f1.Getfractionvalue());
+        Fraction f4 = new Fraction(1,3);
+        Console.WriteLine(f4.Getfractionstring());
+        Console.WriteLine(f4.Getfractionvalue());
     }
 }

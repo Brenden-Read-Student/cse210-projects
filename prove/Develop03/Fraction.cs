@@ -29,7 +29,7 @@ public class Fraction
      }
      public double Getfractionvalue()
      {
-        double value = _top/_bottom;
+        double value = (double)_top/(double)_bottom;
         return value; 
      }
  }
