@@ -1,30 +1,23 @@
 using System;
+using System.Net.Http.Headers;
 
-class Program
+public class Main 
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("choose a whole number");
-        string con = Console.ReadLine();
-        Console.WriteLine("again");
-        string son = Console.ReadLine();
-        int a = int.Parse(con);
-        int b = int.Parse(son);
+static int randomizer()
+{
+    Random random = new Random();
+    int randomNumber = random.Next(0, 1);
+    return randomNumber;
+}
+static Main()
+{
+    int ran = randomizer();
 
-        Fraction f1 = new Fraction();
-        Console.WriteLine(f1.Getfractionstring());
-        Console.WriteLine(f1.Getfractionvalue());
+    Refrencecall Refrencecall = new Refrencecall();
+    Console.WriteLine(Refrencecall.scripstring(ran));
 
-        Fraction f2 = new Fraction(a);
-        Console.WriteLine(f2.Getfractionstring());
-        Console.WriteLine(f2.Getfractionvalue());
+    Scriptverse Scriptverse = new Scriptverse();
+    Console.WriteLine(Scriptverse.scripstring(ran));
+}
 
-        Fraction f3 = new Fraction(a,b);
-        Console.WriteLine(f3.Getfractionstring());
-        Console.WriteLine(f3.Getfractionvalue());
-
-        Fraction f4 = new Fraction(1,3);
-        Console.WriteLine(f4.Getfractionstring());
-        Console.WriteLine(f4.Getfractionvalue());
-    }
 }
