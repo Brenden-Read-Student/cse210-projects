@@ -1,15 +1,15 @@
 using System;
 using System.Net.Http.Headers;
 
-public class Main 
+public class Program
 {
 static int randomizer()
 {
     Random random = new Random();
-    int randomNumber = random.Next(0, 1);
+    int randomNumber = random.Next(0, 3);
     return randomNumber;
 }
-static Main()
+static void Main()
 {
     int ran = randomizer();
 
@@ -18,6 +18,11 @@ static Main()
 
     Scriptverse Scriptverse = new Scriptverse();
     Console.WriteLine(Scriptverse.scripstring(ran));
+    Console.ReadLine();
+
+    Scriptmix Scriptmix = new Scriptmix();
+    Scriptmix.Userinteract(ran);
+    
 }
 
 }
